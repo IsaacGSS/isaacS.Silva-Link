@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Arcade";
+  src: url("../../assets/fonts/arcadeclassic.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arcade";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: #000;
+  background: url(../assets/img/dia.gif) no-repeat center center;
+  background-size: cover;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 25px;
+  padding: 25px 50px;
+  background-color: rgba(190, 190, 190, 0.1882352941);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1803921569), -5px -5px 25px rgba(0, 0, 0, 0.1803921569);
+}
+body main .perfil .perfilimg {
+  width: 150px;
+  border-radius: 100%;
+}
+body main .perfil p {
+  word-spacing: 0.25rem;
+}
+body main .perfil .emojisvg {
+  width: 1.5rem;
+  -webkit-animation: myfirst 3s linear 0.2s infinite alternate;
+          animation: myfirst 3s linear 0.2s infinite alternate;
+}
+@-webkit-keyframes myfirst {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes myfirst {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+body .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .links .link {
+  width: 250px;
+  padding: 8px 10px;
+  text-align: center;
+}
+body .links details {
+  margin: 10px 0;
+  border: solid 1px #696969;
+  border-radius: 8px;
+  color: #000;
+}
+body .links details td {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+body .links details a {
+  padding: 5.5px 10%;
+  margin: 10px 0;
+  background-color: #696969;
+}
+body .links details span {
+  position: absolute;
+  left: calc(50% - 5.75rem);
+}
+body .links details div {
+  padding: 5px 20px 2.5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .links a {
+  margin: 10px 0;
+  text-decoration: none;
+  border: solid 1px #696969;
+  border-radius: 8px;
+  color: #000;
+}
+body .links a span {
+  position: absolute;
+  left: calc(50% - 5.75rem);
+}
+body .light, body .light a {
+  color: #000;
+}
+body .dark, body .dark a {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

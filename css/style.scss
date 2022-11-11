@@ -1,0 +1,23 @@
+@import '../Sass/font';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arcade";
+}
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100vh;
+ text-align: center;
+ color: $color-text-dark;
+ background:  url(../assets/img/dia.gif) no-repeat center center;
+ background-size:cover;
+
+ @import '../Sass/page';
+ @import '../Sass/link';
+}

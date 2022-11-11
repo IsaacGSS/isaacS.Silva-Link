@@ -1,0 +1,65 @@
+.links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .link{
+    width: 250px;
+    padding: 8px 10px;
+    text-align: center;    
+  }
+
+  details{
+    margin: 10px 0;
+    border: solid 1px $border-link;
+    border-radius: 8px;
+    color: $color-text-dark;
+
+    td{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    a{
+      padding: 5.5px 10%;
+      margin: 10px 0;
+      background-color: $border-link;
+    }
+
+    span{
+      position: absolute;
+      left: calc(50% - 5.75rem);
+    }
+
+    div{
+      padding: 5px 20px 2.5px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  a{
+    margin: 10px 0;
+    text-decoration: none;
+    border: solid 1px $border-link;
+    border-radius: 8px;
+    color: $color-text-dark;
+
+    span{
+      position: absolute;
+      left: calc(50% - 5.75rem);
+    }
+  }
+}
+
+.light, .light a{
+  color: $color-text-dark;
+  }
+
+.dark, .dark a{
+  color: $color-text-light;
+}

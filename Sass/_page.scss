@@ -1,0 +1,38 @@
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 25px;
+  padding: 25px 50px;
+  background-color: $color-bg;
+  backdrop-filter: blur( 10px );
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px $shadow,
+              -5px -5px 25px $shadow;
+  .perfil {
+
+    .perfilimg {
+      width: 150px;
+      border-radius: 100%;
+    }
+
+    p {
+      word-spacing: .25rem;
+    }
+
+    .emojisvg{
+      width: 1.5rem;
+    
+      animation: myfirst 3s linear .2s infinite alternate;
+
+      @keyframes myfirst {
+        0%  {transform: rotate(0deg);}
+        25% {transform: rotate(50deg);}
+        50% {transform: rotate(-10deg);}
+      }
+    }
+  }
+
+  
+
+}
